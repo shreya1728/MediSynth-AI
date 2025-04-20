@@ -1,0 +1,179 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+font-family: "Montserrat", sans-serif;
+}
+/* Dark Mode Theme */
+ :root {
+    --primary: #0D1B2A;
+    --secondary: #1B263B;
+    --accent: #778DA9;
+    --background: #0A192F;
+    --text: #E0E1DD;
+}
+.st-emotion-cache-1q2d4ya {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 18px;
+}
+.st-emotion-cache-1cvow4s h1{
+    font-family: "Montserrat", sans-serif !important;
+
+}
+.st-emotion-cache-1cvow4s h3{
+    font-family: "Montserrat", sans-serif !important;
+
+}
+.st-emotion-cache-1espb9k h2{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 26px;
+}
+
+.st-emotion-cache-1espb9k h3{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 23px;
+
+}
+.caption-text {
+    font-family: "Montserrat", sans-serif !important;
+
+    font-weight: 400;
+    font-size: 1rem; /* Smaller than subheading */
+    margin-top: 0.5rem; /* Optional: adjust gap if needed */
+}
+.centered-title {
+    font-family: "Montserrat", sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* or 100vh to fill the whole page */
+    text-align: center;
+}
+.subheading-text {
+    font-family: "Montserrat", sans-serif !important;
+
+    font-weight: 400;
+    font-size: 1.5rem; /* Smaller than main heading */
+    text-align: center;
+    margin-top: 1rem; /* optional: reduce gap between title & subtitle */
+}
+
+/* Increase font size of the Embedding Provider label */
+.st-emotion-cache-1qrd9al p{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 23px;
+}
+.st-emotion-cache-1vsah7k p{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 18px;
+}
+
+.st-af {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1.2rem;
+}
+.main {
+    background: var(--background);
+    color: var(--text);
+}
+
+.block-container {
+    max-width: 100% !important;
+    padding-left: 2rem !important;
+    padding-top: 4rem !important;
+    padding-right: 2rem !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+/* Gradient Overlay */
+.main:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(160deg, var(--primary) 0%, var(--background) 100%);
+    z-index: -1;
+} 
+/* .stApp{
+    background: linear-gradient(90deg, rgba(51, 50, 50, 1), #180477, #3109ee);
+
+} */
+/* Chat Messages */
+.stChatMessage {
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stChatMessage:hover {
+    transform: translateY(-2px);
+}
+
+.stChatMessage[data-role="user"] {
+    background: linear-gradient(145deg, #1B263B 0%, #0D1B2A 100%);
+    border-color: var(--accent);
+}
+
+.stChatMessage[data-role="assistant"] {
+    background: linear-gradient(145deg, #0A192F 0%, #1B263B 100%);
+    border-color: var(--accent);
+}
+
+/* Input & Dropdown */
+.stTextInput textarea {
+    background: rgba(13, 27, 42, 0.8) !important;
+    color: var(--text) !important;
+    border-radius: 15px !important;
+    border: 2px solid var(--accent) !important;
+    padding: 1rem !important;
+}
+
+.stSelectbox div[data-baseweb="select"] {
+    background: rgba(13, 27, 42, 0.8) !important;
+    border-radius: 12px !important;
+    border: 2px solid var(--accent) !important;
+}
+
+/* Sidebar Enhancements */
+.sidebar .sidebar-content {
+    background: linear-gradient(160deg, var(--primary) 0%, #0A192F 100%) !important;
+    border-right: 2px solid var(--accent);
+}
+
+/* Animated Title */
+.gradient-text {
+    background: linear-gradient(45deg, #E0E1DD, #778DA9, #1B263B);
+    -webkit-background-clip: text;
+
+    font-weight: 400 !important;
+    font-style: normal;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Status Elements */
+.stSpinner > div {
+    background-color: var(--accent) !important;
+}
+
+/* Hover Effects */
+.stSelectbox option:hover {
+    background: var(--secondary) !important;
+}
+
+/* Make tables use full width in Report Analyzer */
